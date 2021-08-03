@@ -120,6 +120,8 @@ body {
 header {
   padding: 34px 0;
   position: absolute;
+  z-index: 150;
+  top: 0;
   width: 100%;
   color: #FFFFFF; }
   header a {
@@ -163,6 +165,7 @@ header {
     margin-left: 45px; }
 
 .main-section {
+  position: relative;
   background-color: #000000;
   padding-top: 200px;
   padding-bottom: 315px;
@@ -191,6 +194,30 @@ header {
   .main-section .main-img {
     position: absolute;
     top: 120%; }
+  .main-section .hanging-coin {
+    position: absolute; }
+    .main-section .hanging-coin.top-left {
+      top: 10%;
+      left: 15%;
+      width: 80px; }
+    .main-section .hanging-coin.middle-left {
+      top: 28%;
+      left: 23%;
+      width: 120px; }
+    .main-section .hanging-coin.bottom-left {
+      top: 43%;
+      left: 12%; }
+    .main-section .hanging-coin.top-right {
+      top: 18%;
+      right: 20%; }
+    .main-section .hanging-coin.middle-right {
+      top: 40%;
+      right: 22%;
+      width: 70px; }
+    .main-section .hanging-coin.bottom-right {
+      top: 50%;
+      right: 12%;
+      width: 100px; }
 
 .tools-section {
   padding-top: 580px;
@@ -571,6 +598,92 @@ header {
         transform: rotate(90deg);
         transition: all 0.3s ease-in-out; }
 
+footer {
+  background-color: #f7f7f7;
+  padding-top: 50px;
+  padding-bottom: 30px; }
+  footer .footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  footer .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 900;
+    color: #000000;
+    margin-bottom: 24px; }
+  footer .text-snippet {
+    max-width: 340px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -.5px;
+    color: rgba(0, 0, 0, 0.5); }
+  footer .right-side {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: flex-end; }
+  footer .input-wrapper {
+    padding: 0;
+    justify-content: flex-end; }
+    footer .input-wrapper .standard-form-input {
+      background-color: #EBEBEB;
+      border-radius: 4px;
+      width: 100%;
+      max-width: 270px;
+      color: #b2b2b2;
+      margin-right: 10px;
+      padding-left: 20px; }
+      footer .input-wrapper .standard-form-input::-webkit-input-placeholder {
+        color: #b2b2b2; }
+      footer .input-wrapper .standard-form-input:-moz-placeholder {
+        color: #b2b2b2; }
+      footer .input-wrapper .standard-form-input::-moz-placeholder {
+        color: #b2b2b2; }
+      footer .input-wrapper .standard-form-input:-ms-input-placeholder {
+        color: #b2b2b2; }
+      footer .input-wrapper .standard-form-input::placeholder {
+        color: #b2b2b2; }
+    footer .input-wrapper .button {
+      font-size: 14px; }
+  footer .link-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 45px; }
+  footer .links {
+    display: flex;
+    flex-direction: row; }
+    footer .links li {
+      padding: 0 12px; }
+      footer .links li:last-of-type {
+        padding-right: 0; }
+      footer .links li a {
+        display: flex; }
+        footer .links li a img {
+          width: 20px;
+          height: 20px; }
+  footer .mail {
+    font-size: 14px;
+    letter-spacing: -.5px;
+    font-weight: 500;
+    margin-left: 16px; }
+
+.separate-line {
+  width: 100%;
+  height: 1px;
+  background-color: #EBEBEB;
+  margin-top: 48px;
+  margin-bottom: 32px; }
+
+.copyright-wrapper .copyright {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  color: #828282; }
+
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1600px) {
@@ -587,28 +700,6 @@ header {
   /**/ }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width: 768px) {
-  /*Disable Animation on Mobile Devices*/
-  .animated {
-    /*CSS transitions*/
-    -o-transition-property: none !important;
-    -moz-transition-property: none !important;
-    -ms-transition-property: none !important;
-    -webkit-transition-property: none !important;
-    transition-property: none !important;
-    /*CSS transforms*/
-    -o-transform: none !important;
-    -moz-transform: none !important;
-    -ms-transform: none !important;
-    -webkit-transform: none !important;
-    transform: none !important;
-    /*CSS animations*/
-    -webkit-animation: none !important;
-    -moz-animation: none !important;
-    -o-animation: none !important;
-    -ms-animation: none !important;
-    animation: none !important; } }
-
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   /**/ }

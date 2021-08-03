@@ -39,6 +39,8 @@ body
 header
 	padding: 34px 0
 	position: absolute
+	z-index: 150
+	top: 0
 	width: 100%
 	color: $white-color
 	a
@@ -81,6 +83,7 @@ header
 	.button
 		margin-left: 45px
 .main-section
+	position: relative
 	background-color: #000000
 	padding-top: 200px
 	padding-bottom: 315px
@@ -109,6 +112,31 @@ header
 	.main-img
 		position: absolute
 		top: 120%
+
+	.hanging-coin
+		position: absolute
+		&.top-left
+			top: 10%
+			left: 15%
+			width: 80px
+		&.middle-left
+			top: 28%
+			left: 23%
+			width: 120px
+		&.bottom-left
+			top: 43%
+			left: 12%
+		&.top-right
+			top: 18%
+			right: 20%
+		&.middle-right
+			top: 40%
+			right: 22%
+			width: 70px
+		&.bottom-right
+			top: 50%
+			right: 12%
+			width: 100px
 
 .tools-section
 	padding-top: 580px
@@ -499,6 +527,92 @@ header
 				transform: rotate(90deg)
 				transition: all 0.3s ease-in-out
 
+footer
+	background-color: $light-gray-color
+	padding-top: 50px
+	padding-bottom: 30px
+	.footer-content
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+	.logo
+		display: flex
+		flex-direction: row
+		align-items: center
+		font-size: 28px
+		font-weight: 900
+		color: #000000
+		margin-bottom: 24px
+	.text-snippet
+		max-width: 340px
+		font-size: 16px
+		line-height: 24px
+		letter-spacing: -.5px
+		color: rgba(0, 0, 0, .5)
+	.right-side
+		display: flex
+		flex-direction: column
+		flex-grow: 1
+		align-items: flex-end
+	.input-wrapper
+		padding: 0
+		justify-content: flex-end
+		.standard-form-input
+			background-color: #EBEBEB
+			border-radius: 4px
+			width: 100%
+			max-width: 270px
+			color: $dark-gray-color
+			margin-right: 10px
+			padding-left: 20px
+			&::-webkit-input-placeholder
+				color: $dark-gray-color
+			&:-moz-placeholder
+				color: $dark-gray-color
+			&::-moz-placeholder
+				color: $dark-gray-color
+			&:-ms-input-placeholder
+				color: $dark-gray-color
+			&::placeholder
+				color: $dark-gray-color
+		.button
+			font-size: 14px
+	.link-block
+		display: flex
+		flex-direction: row
+		align-items: center
+		margin-top: 45px
+	.links
+		display: flex
+		flex-direction: row
+		li
+			padding: 0 12px
+			&:last-of-type
+				padding-right: 0
+			a
+				display: flex
+				img
+					width: 20px
+					height: 20px
+	.mail
+		font-size: 14px
+		letter-spacing: -.5px
+		font-weight: 500
+		margin-left: 16px
+
+.separate-line
+	width: 100%
+	height: 1px
+	background-color: #EBEBEB
+	margin-top: 48px
+	margin-bottom: 32px
+
+.copyright-wrapper
+	.copyright
+		font-size: 14px
+		font-weight: 400
+		font-family: 'Poppins', sans-serif
+		color: #828282
 
 //ALWAYS END
 @import "media"
