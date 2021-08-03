@@ -31,7 +31,7 @@ $(function() {
 
 	$('.tiles-block').slick({
 		// slidesToShow: 1,
-		// slidesToScroll: 1,
+		slidesToScroll: 1,
 		// centerMode: true,
 		// focusOnSelect: false,
 		arrows: false,

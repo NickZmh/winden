@@ -139,11 +139,12 @@ body {
 
 header {
   padding: 34px 0;
-  position: absolute;
+  position: sticky;
   z-index: 150;
   top: 0;
   width: 100%;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  background-color: #000000; }
   header a {
     color: #FFFFFF; }
   header .logo {
@@ -255,7 +256,8 @@ header {
       width: 103px; }
     .main-section .hanging-coin.top-right {
       top: 18%;
-      right: 20%; }
+      right: 20%;
+      width: 65px; }
     .main-section .hanging-coin.middle-right {
       top: 40%;
       right: 22%;
@@ -264,6 +266,90 @@ header {
       top: 50%;
       right: 12%;
       width: 100px; }
+  .main-section .floating-top-left {
+    animation-name: floating1;
+    animation-duration: 3s;
+    animation-iteration-count: 10;
+    animation-timing-function: ease-in-out;
+    margin-top: 5px; }
+  .main-section .floating-middle-left {
+    animation-name: floating2;
+    animation-duration: 3s;
+    animation-iteration-count: 10;
+    animation-timing-function: ease-in-out;
+    margin-top: 5px; }
+  .main-section .floating-bottom-left {
+    animation-name: floating3;
+    animation-duration: 3s;
+    animation-iteration-count: 10;
+    animation-timing-function: ease-in-out;
+    margin-top: 5px; }
+  .main-section .floating-top-right {
+    animation-name: floating4;
+    animation-duration: 3s;
+    animation-iteration-count: 10;
+    animation-timing-function: ease-in-out;
+    margin-top: 5px; }
+  .main-section .floating-middle-right {
+    animation-name: floating5;
+    animation-duration: 3s;
+    animation-iteration-count: 10;
+    animation-timing-function: ease-in-out;
+    margin-top: 5px; }
+  .main-section .floating-bottom-right {
+    animation-name: floating6;
+    animation-duration: 3s;
+    animation-iteration-count: 10;
+    animation-timing-function: ease-in-out;
+    margin-top: 5px; }
+
+@keyframes floating1 {
+  from {
+    transform: translate(0, 0px); }
+  65% {
+    transform: translate(0, 15px); }
+  to {
+    transform: translate(0, 0px); } }
+
+@keyframes floating2 {
+  from {
+    transform: translate(0, 0px); }
+  65% {
+    transform: translate(0, -20px); }
+  to {
+    transform: translate(0, 0px); } }
+
+@keyframes floating3 {
+  from {
+    transform: translate(0, 0px); }
+  50% {
+    transform: translate(0, 35px); }
+  to {
+    transform: translate(0, 0px); } }
+
+@keyframes floating4 {
+  from {
+    transform: translate(0, 0px); }
+  60% {
+    transform: translate(0, -45px); }
+  to {
+    transform: translate(0, 0px); } }
+
+@keyframes floating5 {
+  from {
+    transform: translate(0, 0px); }
+  40% {
+    transform: translate(0, 35px); }
+  to {
+    transform: translate(0, 0px); } }
+
+@keyframes floating6 {
+  from {
+    transform: translate(0, 0px); }
+  45% {
+    transform: translate(0, -35px); }
+  to {
+    transform: translate(0, 0px); } }
 
 .tools-section {
   padding-top: 610px;
