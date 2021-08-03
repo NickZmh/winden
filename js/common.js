@@ -65,6 +65,9 @@ $(function() {
 		direction: 'horizontal',
 		transition: 'transform 0.3s ease-out'
 	});
+	$('.left-to-goal').paroller({
+		transition: 'transform 0.3s ease-out'
+	});
 
 
 	function initAcc(elem, option){

@@ -214,8 +214,7 @@ header {
   position: relative;
   background-color: #000000;
   padding-top: 180px;
-  padding-bottom: 315px;
-  min-height: 100vh; }
+  padding-bottom: 315px; }
   .main-section .main-title {
     max-width: 630px;
     margin-bottom: 24px; }
@@ -240,6 +239,11 @@ header {
   .main-section .main-img {
     position: absolute;
     top: 120%; }
+    .main-section .main-img .left-to-goal {
+      position: absolute;
+      left: 0;
+      max-width: 400px;
+      bottom: 20%; }
   .main-section .hanging-coin {
     position: absolute; }
     .main-section .hanging-coin.top-left {
