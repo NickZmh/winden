@@ -7,7 +7,25 @@ $(function() {
 		});
 	};
 
-
+	$('.navi-hamburger').click(function (event) {
+		$('.nav-mobile').slideToggle({
+			duration: 250,
+			complete: function () {
+				if ($(this).is(':visible'))
+					$(this).css('display','flex');
+			}
+		});
+		$(this).toggleClass('open');
+		$('.admittance-desk').slideToggle('slow');
+		event.stopPropagation();
+		if($('.nav-mobile').hasClass('open')) {
+			$('html').css('overflow','hidden');
+			// $('#main-header').addClass('resize');
+		}else {
+			// $('#main-header').removeClass('resize');
+			$('html').css('overflow', 'auto');
+		}
+	});
 
 
 
