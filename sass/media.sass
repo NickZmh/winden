@@ -3,6 +3,12 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1600px)
+	.for-narrow-screen
+		display: block
+	.for-wide-screen
+		display: none
+
 @media only screen and (max-width : 1200px)
 	/**/
 
@@ -74,3 +80,8 @@
 	.container
 		max-width: 1310px
 
+@media only screen and (min-width : 1600px)
+	.for-narrow-screen
+		display: none
+	.for-wide-screen
+		display: block
