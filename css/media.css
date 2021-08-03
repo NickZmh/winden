@@ -83,8 +83,37 @@
   header .right-side {
     display: none; }
   .main-section {
-    padding-top: 150px;
-    padding-bottom: 200px; } }
+    padding-top: 80px;
+    padding-bottom: 200px; }
+  .nav-mobile-wrapper {
+    padding-top: 80px;
+    background-color: #000000; }
+  .nav-mobile {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    z-index: 250; }
+    .nav-mobile .top-menu {
+      flex-direction: column;
+      align-items: flex-start; }
+      .nav-mobile .top-menu li {
+        display: flex;
+        padding: 0;
+        margin-bottom: 8px; }
+        .nav-mobile .top-menu li a {
+          font-size: 15px;
+          padding: 4px 0;
+          color: #FFFFFF;
+          -webkit-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out; }
+          .nav-mobile .top-menu li a:hover {
+            -webkit-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+            color: rgba(255, 255, 255, 0.8); }
+  .button {
+    font-size: 15px;
+    display: inline-flex; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
