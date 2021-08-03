@@ -1,0 +1,164 @@
+
+@import "vars.sass"
+@import "header.sass"
+
+
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+
+body
+
+	margin: 0
+	font-family: 'Inter', sans-serif
+
+
+
+header
+	padding: 34px 0
+	position: absolute
+	width: 100%
+	color: $white-color
+	a
+		color: $white-color
+	.logo
+		display: flex
+		flex-direction: row
+		align-items: center
+		font-size: 28px
+		font-weight: 900
+		letter-spacing: -1px
+		img
+			width: 24px
+	.top-wrapper
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+	.right-side
+		display: flex
+		flex-direction: row
+		align-items: center
+	.top-menu
+		display: flex
+		flex-direction: row
+		align-items: center
+		li
+			padding: 0 20px
+			&:last-of-type
+				padding-right: 0
+		a
+			font-size: 16px
+			font-weight: 500
+			-webkit-transition: all 0.2s ease-in-out
+			transition: all 0.2s ease-in-out
+			letter-spacing: -.5px
+			&:hover
+				-webkit-transition: all 0.2s ease-in-out
+				transition: all 0.2s ease-in-out
+				color: rgba(255, 255, 255, 0.8)
+	.button
+		margin-left: 45px
+.main-section
+	background-color: #000000
+	padding-top: 200px
+	padding-bottom: 315px
+	min-height: 100vh
+	.main-title
+		max-width: 630px
+		margin-bottom: 24px
+	.main-description
+		max-width: 540px
+		color: $dark-gray-color
+	.input-wrapper
+		margin-top: 50px
+		background-color: #262626
+		.standard-form-input
+			color: $dark-gray-color
+			&::-webkit-input-placeholder
+				color: $dark-gray-color
+			&:-moz-placeholder
+				color: $dark-gray-color
+			&::-moz-placeholder
+				color: $dark-gray-color
+			&:-ms-input-placeholder
+				color: $dark-gray-color
+			&::placeholder
+				color: $dark-gray-color
+	.main-img
+		position: absolute
+		top: 120%
+
+.tools-section
+	padding-top: 580px
+	padding-bottom: 110px
+	display: flex
+	flex-direction: column
+	align-items: flex-end
+	.main-title
+		margin-bottom: 30px
+	.main-description
+		margin-bottom: 80px
+	.tiles-block
+		display: flex
+		flex-direction: row
+		align-items: center
+		width: 100%
+		overflow-y: hidden
+		overflow-x: hidden
+		padding-left: 80px
+		margin-bottom: 0
+		.tile
+			padding: 0 12px
+			.tile-body
+				display: flex
+				flex-direction: column
+				justify-content: space-between
+				padding: 34px 40px 50px
+				background-color: #000000
+				border-radius: 12px
+				box-shadow: 10px 20px 30px rgba(18, 19, 22, 0.03)
+				width: 310px
+				min-height: 360px
+				color: $white-color
+				.top-block
+					margin-bottom: 30px
+				.bottom-block
+					display: flex
+					flex-direction: column
+					justify-content: flex-start
+					min-height: 160px
+				.tile-title
+					font-weight: 700
+					font-size: 32px
+					line-height: 39px
+					letter-spacing: -.5px
+					margin-bottom: 12px
+				.tile-description
+					font-weight: 400
+					font-size: 16px
+					line-height: 24px
+
+//ALWAYS END
+@import "media"

@@ -1,0 +1,95 @@
+
+@import "vars"
+
+a
+    text-decoration: none
+
+h1,h2,h3,h4,h5,h6,p
+    margin: 0
+
+ul
+    padding:
+    margin: 0
+    li
+        list-style-type: none
+
+img
+    max-width: 100%
+
+.hover-state
+    -webkit-transition: all 0.3s ease-in-out
+    transition: all 0.3s ease-in-out
+    &:hover
+        -webkit-transition: all 0.3s ease-in-out
+        transition: all 0.3s ease-in-out
+        opacity: .8
+
+
+.black-bg
+    background: #000000
+    .main-title
+        color: $white-color
+.white-bg
+    .main-title
+        color: rgba(0, 0, 0, 1)
+.text-break
+    display: block
+
+button
+    outline: none
+    border: none
+    cursor: pointer
+
+.button
+    padding: 12px 24px
+    border-radius: 4px
+    font-size: 16px
+    font-weight: 600
+    letter-spacing: -.5px
+    color: $white-color
+    &.green
+        background-color: #20C933
+    &.blue
+        background-color: rgba(10, 93, 255, 1)
+
+
+.wrapper-content
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.main-title
+    font-size: 88px
+    line-height: 98px
+    font-weight: 700
+    letter-spacing: -4px
+    text-align: center
+.main-description
+    font-size: 22px
+    line-height: 32px
+    font-weight: 500
+    text-align: center
+
+.input-wrapper
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    padding: 10px 10px 11px 20px
+    border-radius: 6px
+    max-width: 480px
+    width: 100%
+    .standard-form-input
+        display: flex
+        flex-grow: 1
+        font-size: 14px
+        line-height: 16px
+        font-weight: 400
+        border: none
+        background-color: transparent
+        padding-right: 25px
+        &:focus
+            border: none
+            outline: none
+            box-shadow: none
+
+
