@@ -423,6 +423,7 @@ header {
     margin-right: -12px;
     margin-left: -12px; }
     .tools-section .tiles-block .tile {
+      cursor: pointer;
       width: 25%;
       padding: 0 12px;
       transition: all 0.3s ease-out; }
