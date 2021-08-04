@@ -337,14 +337,18 @@ header
 		display: flex
 		flex-direction: row
 		align-items: center
-		width: 100%
-		overflow-y: hidden
-		overflow-x: hidden
-		padding-left: 80px
 		margin-bottom: 0
+		margin-right: -12px
+		margin-left: -12px
 		.tile
+			width: 25%
 			padding: 0 12px
+			transition: all 0.3s ease-out
+			&:hover
+				transform: scale(1.033) translateZ(0)
+				transition: all 0.3s ease-out
 			.tile-body
+				width: 100%
 				position: relative
 				display: flex
 				flex-direction: column
@@ -353,7 +357,6 @@ header
 				background-color: #000000
 				border-radius: 12px
 				box-shadow: 10px 20px 30px rgba(18, 19, 22, 0.03)
-				width: 310px
 				min-height: 360px
 				color: $white-color
 				&.blue
@@ -399,7 +402,6 @@ header
 .blue-banner-section
 	position: relative
 	padding-top: 120px
-	padding-bottom: 170px
 	background-color: #0A5DFF
 	overflow: hidden
 	.main-title
@@ -410,6 +412,32 @@ header
 	.main-description
 		color: $light-gray-color
 		text-align: left
+	.bottom-snippet
+		margin-top: 70px
+		display: inline-flex
+		flex-direction: row
+		align-items: center
+		padding: 35px 35px 35px
+		background-color: #0B55E7
+		img
+			width: 80px
+			margin-right: 25px
+		.content-block
+			color: $white-color
+			.title
+				display: flex
+				flex-direction: row
+				align-items: flex-start
+				font-size: 32px
+				font-weight: 700
+				margin-bottom: 6px
+				.dollar
+					margin-top: 4px
+					font-size: 16px
+			.description
+				font-size: 12px
+				font-weight: 500px
+
 	.banner-img-snippet
 		position: absolute
 		bottom: 0

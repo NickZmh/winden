@@ -28,6 +28,14 @@
     left: -10vw; }
   .taxes .right-side {
     right: -14vw; }
+  .tools-section .tiles-block {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 740px; }
+    .tools-section .tiles-block .tile {
+      width: 50%;
+      margin-bottom: 30px; }
   .technologies .techno-tile .top-block {
     padding: 50px 40px 0; }
   .plans .tile-inside-block {
@@ -207,19 +215,17 @@
     max-width: 28vw; }
   .tools-section {
     padding-top: 360px; }
-    .tools-section .tiles-block {
-      padding-left: 60px; }
-      .tools-section .tiles-block .tile .tile-body {
-        padding: 29px 35px 40px;
-        min-height: 330px; }
-        .tools-section .tiles-block .tile .tile-body .tile-title {
-          font-size: 30px;
-          line-height: 37px; }
-        .tools-section .tiles-block .tile .tile-body .top-block img {
-          width: 65px; }
-        .tools-section .tiles-block .tile .tile-body .top-block .fixed-img {
-          left: 3px;
-          width: 95px; }
+    .tools-section .tiles-block .tile .tile-body {
+      padding: 29px 35px 40px;
+      min-height: 330px; }
+      .tools-section .tiles-block .tile .tile-body .tile-title {
+        font-size: 30px;
+        line-height: 37px; }
+      .tools-section .tiles-block .tile .tile-body .top-block img {
+        width: 65px; }
+      .tools-section .tiles-block .tile .tile-body .top-block .fixed-img {
+        left: 3px;
+        width: 95px; }
   .taxes {
     padding-top: 100px;
     padding-bottom: 60px; }
@@ -353,13 +359,14 @@
     .tools-section .main-description {
       margin-bottom: 60px; }
     .tools-section .tiles-block {
-      padding-left: 10px; }
-      .tools-section .tiles-block .tile .tile-body {
-        padding: 29px 30px 35px;
-        min-height: 310px;
-        width: 280px; }
-        .tools-section .tiles-block .tile .tile-body .top-block img {
-          width: 55px; }
+      max-width: 360px; }
+      .tools-section .tiles-block .tile {
+        width: 100%; }
+        .tools-section .tiles-block .tile .tile-body {
+          padding: 29px 30px 35px;
+          min-height: 310px; }
+          .tools-section .tiles-block .tile .tile-body .top-block img {
+            width: 55px; }
   .taxes .main-title {
     max-width: 380px; }
   .taxes .main-description {
@@ -474,10 +481,31 @@
         background-color: #262626; }
   .tools-section {
     padding-top: 45vw; }
+    .tools-section .tiles-block {
+      margin-left: 0;
+      margin-right: 0; }
+      .tools-section .tiles-block .tile {
+        padding: 0; }
   .blue-banner-section {
     padding-top: 90px; }
     .blue-banner-section .banner-img-snippet {
       padding-top: 40px; }
+    .blue-banner-section .bottom-snippet {
+      width: 100%;
+      padding: 30px 30px;
+      flex-direction: column; }
+      .blue-banner-section .bottom-snippet img {
+        margin-bottom: 20px; }
+      .blue-banner-section .bottom-snippet .content-block .title {
+        display: block;
+        text-align: center; }
+        .blue-banner-section .bottom-snippet .content-block .title .dollar {
+          position: relative;
+          top: -10px;
+          margin-top: 0;
+          display: inline-block; }
+      .blue-banner-section .bottom-snippet .content-block .description {
+        text-align: center; }
   .taxes {
     padding-top: 80px; }
     .taxes .bottom-side {

@@ -29,26 +29,26 @@ $(function() {
 
 
 
-	$('.tiles-block').slick({
-		// slidesToShow: 1,
-		slidesToScroll: 1,
-		// centerMode: true,
-		// focusOnSelect: false,
-		arrows: false,
-		dots: true,
-		// centerPadding: '36%',
-		variableWidth: true,
-		swipeToSlide: true
-	});
-	$('.tiles-block').on('wheel', (function(e) {
-		e.preventDefault();
-
-		if (e.originalEvent.deltaY < 0) {
-			$(this).slick('slickNext');
-		} else {
-			$(this).slick('slickPrev');
-		}
-	}));
+	// $('.tiles-block').slick({
+	// 	// slidesToShow: 1,
+	// 	slidesToScroll: 1,
+	// 	// centerMode: true,
+	// 	// focusOnSelect: false,
+	// 	arrows: false,
+	// 	dots: true,
+	// 	// centerPadding: '36%',
+	// 	variableWidth: true,
+	// 	swipeToSlide: true
+	// });
+	// $('.tiles-block').on('wheel', (function(e) {
+	// 	e.preventDefault();
+	//
+	// 	if (e.originalEvent.deltaY < 0) {
+	// 		$(this).slick('slickNext');
+	// 	} else {
+	// 		$(this).slick('slickPrev');
+	// 	}
+	// }));
 
 	function afterReveal (el) {
 		el.addEventListener('animationend', function () {
