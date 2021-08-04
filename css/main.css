@@ -294,6 +294,7 @@ header {
     bottom: 10%;
     left: 20%; }
   .main-section .hanging-coin {
+    display: none;
     position: absolute; }
     .main-section .hanging-coin.top-left {
       top: 12%;
@@ -322,41 +323,35 @@ header {
   .main-section .floating-top-left {
     animation-name: floating1;
     animation-duration: 3s;
-    animation-delay: 1.5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     margin-top: 5px; }
   .main-section .floating-middle-left {
     animation-name: floating2;
     animation-duration: 3s;
-    animation-delay: 1.5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     margin-top: 5px; }
   .main-section .floating-bottom-left {
     animation-name: floating3;
     animation-duration: 3s;
-    animation-delay: 1.5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     margin-top: 5px; }
   .main-section .floating-top-right {
     animation-name: floating4;
     animation-duration: 3s;
-    animation-delay: 1.5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     margin-top: 5px; }
   .main-section .floating-middle-right {
     animation-name: floating5;
     animation-duration: 3s;
-    animation-delay: 1.5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     margin-top: 5px; }
   .main-section .floating-bottom-right {
     animation-name: floating6;
-    animation-delay: 1.5s;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;

@@ -50,9 +50,17 @@ $(function() {
 		}
 	}));
 
+	function afterReveal (el) {
+		el.addEventListener('animationend', function () {
+			console.log('This runs once finished!');
+			$('.hanging-coin').fadeIn();
+		});
+	}
+
 	wow = new WOW({
 		animateClass: "animated",
 		offset: 0,
+		callback: afterReveal
 	});
 	wow.init();
 
