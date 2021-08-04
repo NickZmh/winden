@@ -10,8 +10,48 @@
 	.for-wide-screen
 		display: none
 
+@media only screen and (max-width: 1400px)
+	.main-section
+		.main-img
+			.wrapper-payload-card
+				right: 0
+				top: 12%
+				.payload-card
+					max-width: 25vw
+			.winden-card
+				max-width: 31vw
+			.left-to-goal
+				max-width: 34vw
+	.blue-banner-section
+		.main-title
+			font-size: 86px
+		.banner-img-snippet
+			img
+				max-width: 620px
+	.taxes
+		.right-side
+			right: -7vw
+@media only screen and (max-width: 1300px)
+	.taxes
+		.left-side
+			left: -10vw
+		.right-side
+			right: -14vw
+	.technologies
+		.techno-tile
+			.top-block
+				padding: 50px 40px 0
+	.plans
+		.tile-inside-block
+			margin: 0 15px
+	.bubbles-snippet
+		img
+			max-width: 340px
 @media only screen and (max-width: 1200px)
 
+	.blue-banner-section
+		.main-title
+			font-size: 80px
 	.main-title
 		font-size: 80px
 		line-height: 90px
@@ -49,9 +89,105 @@
 				width: 100px
 		.main-description
 			max-width: 480px
+		.clock-icon
+			width: 140px
+
+	.blue-banner-section
+		padding-bottom: 0
+		.row
+			justify-content: center!important
+		.col-12
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+		.main-title
+			max-width: 840px
+			text-align: center
+		.main-description
+			text-align: center
+			max-width: 760px
+		.banner-img-snippet
+			padding-top: 60px
+			position: relative
+			justify-content: center
+			width: 100%
+	.taxes
+		display: flex
+		flex-direction: column
+		align-items: center
+		padding-bottom: 40px
+		.main-description
+			max-width: 650px
+		.main-description
+			margin-bottom: 50px
+		.right-side,
+		.left-side
+			display: inline-flex
+			position: relative
+			top: 0
+			left: 0
+			right: 0
+			-webkit-transform: translateY(0)
+			transform: translateY(0)
+		.bottom-side
+			padding-top: 60px
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: flex-start
+	.technologies
+		.techno-tile-title
+			font-size: 55px
+			line-height: 67px
+		.techno-tile-description
+			font-size: 20px
+			line-height: 32px
+		.techno-tile
+			.bottom-block
+				min-height: 360px
+	.cards
+		.main-description
+			max-width: 630px
+@media only screen and (max-width: 1100px)
+	.tools-section
+		padding-top: 590px
+	.technologies
+		.techno-tile-title
+			font-size: 48px
+			line-height: 60px
+		.techno-tile
+			.bottom-block
+				min-height: 320px
+	.plans
+		.tile-inside-block
+			margin: 0
+		.tile-plans
+			.head-block
+				padding: 30px 35px 30px
+			.tile-list
+				padding: 30px 35px 50px
+	.faq
+		.accordion
+			.a-container
+				&.active
+					.a-btn
+						padding: 35px 40px 25px 40px
+				.a-panel
+					padding: 0 40px
+				.line-block
+					padding: 0 40px
+			.a-btn
+				padding: 35px 40px
+			span.icon
+				top: 41px
+				right: 35px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
+	.blue-banner-section
+		.main-title
+			font-size: 70px
 	.main-title
 		font-size: 70px
 		line-height: 80px
@@ -86,8 +222,87 @@
 				width: 90px
 		.main-description
 			max-width: 480px
+		.clock-icon
+			width: 98px
+			bottom: 13%
+		.main-img
+			.wrapper-payload-card
+				.payload-card
+					max-width: 21vw
+			.wrapper-winder-card
+				bottom: 7vw
+			.winden-card
+				max-width: 24vw
+			.wrapper-left-to-goal
+				left: -3vw
+			.left-to-goal
+				max-width: 28vw
 
-
+	.tools-section
+		padding-top: 360px
+		.tiles-block
+			padding-left: 60px
+			.tile
+				.tile-body
+					padding: 29px 35px 40px
+					min-height: 330px
+					.tile-title
+						font-size: 30px
+						line-height: 37px
+					.top-block
+						img
+							width: 65px
+						.fixed-img
+							left: 3px
+							width: 95px
+	.taxes
+		padding-top: 100px
+		padding-bottom: 60px
+		.main-title
+			max-width: 500px
+		.bottom-side
+			align-items: flex-start
+	.technologies
+		padding-top: 0
+		padding-bottom: 100px
+		.techno-tile
+			height: initial
+			margin-bottom: 40px
+	.cards
+		padding-top: 100px
+		.main-title
+			max-width: 570px
+	.plans
+		.tile-plans
+			margin-bottom: 40px
+		.img-snippet
+			&::before
+				width: 120px
+				height: 120px
+				top: -115px
+	.faq
+		padding-top: 100px
+		padding-bottom: 100px
+		.main-title
+			margin-bottom: 60px
+	.faq
+		.accordion
+			.a-btn
+				font-size: 20px
+	.bubbles-snippet img
+		max-width: 280px
+	footer
+		.input-wrapper
+			flex-direction: column
+			align-items: flex-end
+			.standard-form-input
+				margin-right: 0
+				padding: 12px 24px
+				margin-bottom: 15px
+				max-width: 240px
+			.button
+				max-width: 240px
+				width: 100%
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px)
 	
@@ -112,13 +327,50 @@
 	//	-ms-animation: none !important
 	//	animation: none !important
 
+	.input-wrapper
+		padding: 8px 8px 9px 15px
+		max-width: 420px
+
+	.blue-banner-section
+		.main-title
+			font-size: 50px
+	.main-title
+		font-size: 50px
+		line-height: 60px
+	.main-description
+		font-size: 18px
+		line-height: 28px
 	header
 		.right-side
 			display: none
 	.main-section
-		padding-top: 80px
+		padding-top: 50px
 		padding-bottom: 200px
-
+		.hanging-coin
+			&.top-left
+				top: 3%
+				left: 10%
+				width: 30px
+			&.middle-left
+				top: 22%
+				left: 10%
+				width: 70px
+			&.bottom-left
+				top: 40%
+				left: 3%
+				width: 70px
+			&.top-right
+				top: 10%
+				right: 8%
+				width: 50px
+			&.middle-right
+				top: 25%
+				right: 10%
+				width: 50px
+			&.bottom-right
+				top: 50%
+				right: 2%
+				width: 80px
 	.nav-mobile-wrapper
 		padding-top: 80px
 		background-color: #000000
@@ -147,12 +399,372 @@
 						color: rgba(255, 255, 255, 0.8)
 	.button
 		font-size: 15px
+		padding: 11px 22px
+		line-height: 21px
 		display: inline-flex
 
-/* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px)
-	/**/
+	.main-section
+		.main-title
+			max-width: 400px
+		.main-description
+			max-width: 420px
+		.main-img
+			top: 115%
+		.clock-icon
+			width: 60px
+			bottom: 17%
+	.tools-section
+		padding-top: 250px
+		.main-title
+			margin-bottom: 25px
+		.main-description
+			margin-bottom: 60px
+		.tiles-block
+			padding-left: 10px
+			.tile
+				.tile-body
+					padding: 29px 30px 35px
+					min-height: 310px
+					width: 280px
+					.top-block
+						img
+							width: 55px
 
+	.taxes
+		.main-title
+			max-width: 380px
+		.main-description
+			margin-bottom: 40px
+		.bottom-side
+			align-items: center
+	.cards
+		.main-title
+			max-width: 380px
+		.main-description
+			max-width: 370px
+
+	.plans
+		padding-top: 100px
+		.tile-plans
+			.head-block
+				.tile-title
+					font-size: 36px
+			.tile-list
+				li
+					font-size: 18px
+					line-height: 23px
+					padding-left: 30px
+	footer
+		.footer-content
+			flex-direction: column
+			align-items: center
+		.left-side
+			display: flex
+			flex-direction: column
+			align-items: center
+		.right-side
+			margin-top: 40px
+		.link-block
+			margin-top: 40px
+	.copyright-wrapper .copyright
+		text-align: center
+
+
+	@keyframes floating1
+		from
+			transform: translate(0,  0px)
+		65%
+			transform: translate(0, 5px)
+		to
+			transform: translate(0, -0px)
+
+	@keyframes floating2
+		from
+			transform: translate(0,  0px)
+		65%
+			transform: translate(0, -10px)
+		to
+			transform: translate(0, 0px)
+
+	@keyframes floating3
+		from
+			transform: translate(0,  0px)
+		50%
+			transform: translate(0, 25px)
+		to
+			transform: translate(0, 0px)
+	@keyframes floating4
+		from
+			transform: translate(0,  0px)
+		60%
+			transform: translate(0, -15px)
+		to
+			transform: translate(0, 0px)
+	@keyframes floating5
+		from
+			transform: translate(0,  0px)
+		40%
+			transform: translate(0, 15px)
+		to
+			transform: translate(0, 0px)
+	@keyframes floating6
+		from
+			transform: translate(0,  0px)
+		45%
+			transform: translate(0, -15px)
+		to
+			transform: translate(0, 0px)
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 575px)
+
+
+	.blue-banner-section
+		.main-title
+			font-size: 42px
+	.main-title
+		font-size: 42px
+		line-height: 52px
+		letter-spacing: -1px
+
+	.main-section
+		position: relative
+		&::after
+			content: ''
+			top: 0
+			position: absolute
+			z-index: 5
+			background-color: rgba(0,0,0, .5)
+			width: 100%
+			height: 100%
+		.container
+			position: relative
+			z-index: 20
+		.main-title
+			max-width: 360px
+		.main-img
+			&.desktop
+				display: none
+			&.mobile
+				display: flex
+				flex-direction: row
+				align-items: center
+		.clock-icon
+			display: none
+
+
+		.input-wrapper
+			flex-direction: column
+			background-color: transparent
+			padding: 0
+			max-width: 375px
+			.standard-form-input
+				background-color: #262626
+
+
+	.tools-section
+		padding-top: 45vw
+	.blue-banner-section
+		padding-top: 90px
+		.banner-img-snippet
+			padding-top: 40px
+	.taxes
+		padding-top: 80px
+		.bottom-side
+			display: none
+		.input-wrapper
+			border: none
+			.standard-form-input
+				font-size: 18px
+				border-radius: 6px
+				border: 1px solid #EBEBEB
+				&::-webkit-input-placeholder
+					font-size: 18px
+				&:-moz-placeholder
+					font-size: 18px
+				&::-moz-placeholder
+					font-size: 18px
+				&:-ms-input-placeholder
+					font-size: 18px
+				&::placeholder
+					font-size: 18px
+
+	.technologies
+		padding-bottom: 80px
+		.techno-tile-title
+			font-size: 42px
+			line-height: 52px
+			letter-spacing: -2px
+		.techno-tile-description
+			font-size: 18px
+			line-height: 28px
+		.techno-tile
+			.top-block
+				padding: 40px 30px 0
+			.bottom-block
+				margin-top: 15px
+				min-height: initial
+	.cards
+		padding-top: 90px
+		padding-bottom: 80px
+		.parallax-horizontal-block,
+		.parallax-horizontal-block-upper
+			display: none
+
+	.plans
+		padding-top: 80px
+		padding-bottom: 80px
+		.img-snippet
+			&::before
+				width: 100px
+				height: 100px
+				top: -96px
+		.main-title
+			margin-bottom: 120px
+
+	.button
+		display: flex
+		flex-direction: row
+		align-items: center
+		justify-content: center
+		//padding: 16px 24px
+		font-size: 17px
+		&.blue
+			border: 1px solid rgba(10, 93, 255, 1)
+	.input-wrapper
+		flex-direction: column
+		background-color: transparent
+		padding: 0
+		max-width: 375px
+	.input-wrapper
+		.standard-form-input
+			padding: 16px 24px
+			border-radius: 4px
+			font-size: 18px
+			height: 50px
+			&::-webkit-input-placeholder
+				font-size: 18px
+			&:-moz-placeholder
+				font-size: 18px
+			&::-moz-placeholder
+				font-size: 18px
+			&:-ms-input-placeholder
+				font-size: 18px
+			&::placeholder
+				font-size: 18px
+		.button
+			height: 50px
+			margin-top: 15px
+
+	.faq
+		.accordion
+			.a-container
+				&.active
+					.a-btn
+						padding: 30px 30px 20px 30px
+				.a-panel
+					padding: 0 30px
+				.line-block
+					padding: 0 30px
+			.a-btn
+				padding: 30px 30px
+			span.icon
+				top: 36px
+				right: 30px
+	.bubbles-snippet img
+		max-width: 240px
+	footer
+		.footer-content
+
+		.input-wrapper
+			max-width: 480px
+			.standard-form-input
+				max-width: 100%
+				font-size: 16px
+				height: 48px
+				margin-bottom: 20px
+				&::-webkit-input-placeholder
+					font-size: 16px
+				&:-moz-placeholder
+					font-size: 16px
+				&::-moz-placeholder
+					font-size: 16px
+				&:-ms-input-placeholder
+					font-size: 16px
+				&::placeholder
+					font-size: 16px
+			.button
+				display: flex
+				flex-direction: row
+				align-items: center
+				max-width: 100%
+				padding: 0
+				height: 48px
+				margin-top: 0
+		.right-side
+			align-items: center
+			max-width: 380px
+			width: 100%
+		.link-block
+			display: flex
+			flex-direction: column
+		.links
+			margin-bottom: 20px
+
+@media only screen and (max-width: 480px)
+	.main-section
+		padding-bottom: 180px
+		.main-img
+			top: 110%
+	.tools-section
+		padding-top: 40vw
+	.technologies
+		.techno-tile-title
+			font-size: 34px
+			line-height: 44px
+			letter-spacing: -2px
+		.techno-tile
+			.top-block
+				padding: 35px 20px 0
+	.plans
+		.tile-plans
+			.head-block
+				padding: 25px 25px 25px
+				.tile-title
+					font-size: 32px
+			.tile-list
+				padding: 30px 25px 40px
+				li
+					margin-bottom: 30px
+					&.checked
+						&::before
+							width: 16px
+							height: 12px
+					&.unchecked
+						&::before
+							width: 14px
+							height: 14px
+
+	.faq
+		padding-top: 80px
+		padding-bottom: 80px
+		.main-title
+			margin-bottom: 40px
+		.accordion
+			.a-container
+				&.active
+					.a-btn
+						padding: 25px 20px 20px 20px
+				.a-panel
+					padding: 0 20px
+				.line-block
+					padding: 0 20px
+			.a-btn
+				padding: 25px 20px
+				font-size: 18px
+			span.icon
+				top: 36px
+				right: 30px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px)
@@ -187,6 +799,8 @@
 	.container,
 	.container-lg
 		max-width: 1310px
+
+
 
 @media only screen and (min-width: 1600px)
 	.for-narrow-screen

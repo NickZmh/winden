@@ -84,7 +84,11 @@ button {
     font-weight: 400;
     border: none;
     background-color: transparent;
-    padding-right: 25px; }
+    padding-right: 25px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none; }
     .input-wrapper .standard-form-input:focus {
       border: none;
       outline: none;
@@ -209,6 +213,9 @@ header {
 
 .nav-mobile {
   display: none; }
+  .nav-mobile .button {
+    font-size: 15px;
+    padding: 12px 24px; }
 
 .main-section {
   position: relative;
@@ -216,6 +223,7 @@ header {
   padding-top: 180px;
   padding-bottom: 315px; }
   .main-section .main-title {
+    width: 100%;
     max-width: 630px;
     margin-bottom: 24px; }
   .main-section .main-description {
@@ -239,11 +247,52 @@ header {
   .main-section .main-img {
     position: absolute;
     top: 120%; }
-    .main-section .main-img .left-to-goal {
+    .main-section .main-img.mobile {
+      display: none; }
+    .main-section .main-img .wrapper-left-to-goal {
       position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      height: 70%;
+      bottom: -7%;
+      left: -45px; }
+    .main-section .main-img .left-to-goal {
+      position: relative;
       left: 0;
-      max-width: 400px;
-      bottom: -5%; }
+      max-width: 420px;
+      transition: transform 0.3s ease-out 0s;
+      will-change: transform; }
+    .main-section .main-img .wrapper-winder-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      position: absolute;
+      right: 0;
+      height: 70%;
+      bottom: 7%; }
+    .main-section .main-img .winden-card {
+      position: relative;
+      right: 0;
+      max-width: 425px; }
+    .main-section .main-img .wrapper-payload-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      position: absolute;
+      right: -25px;
+      height: 50%;
+      top: 105px; }
+      .main-section .main-img .wrapper-payload-card .payload-card {
+        position: relative;
+        right: 0;
+        max-width: 400px;
+        bottom: 0; }
+  .main-section .clock-icon {
+    position: absolute;
+    width: 180px;
+    bottom: 10%;
+    left: 20%; }
   .main-section .hanging-coin {
     position: absolute; }
     .main-section .hanging-coin.top-left {
@@ -259,51 +308,57 @@ header {
       left: 12%;
       width: 103px; }
     .main-section .hanging-coin.top-right {
-      top: 18%;
+      top: 22%;
       right: 20%;
-      width: 65px; }
+      width: 70px; }
     .main-section .hanging-coin.middle-right {
-      top: 40%;
+      top: 38%;
       right: 22%;
       width: 70px; }
     .main-section .hanging-coin.bottom-right {
-      top: 50%;
-      right: 12%;
+      top: 52%;
+      right: 10%;
       width: 100px; }
   .main-section .floating-top-left {
     animation-name: floating1;
     animation-duration: 3s;
-    animation-iteration-count: 10;
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     margin-top: 5px; }
   .main-section .floating-middle-left {
     animation-name: floating2;
     animation-duration: 3s;
-    animation-iteration-count: 10;
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     margin-top: 5px; }
   .main-section .floating-bottom-left {
     animation-name: floating3;
     animation-duration: 3s;
-    animation-iteration-count: 10;
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     margin-top: 5px; }
   .main-section .floating-top-right {
     animation-name: floating4;
     animation-duration: 3s;
-    animation-iteration-count: 10;
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     margin-top: 5px; }
   .main-section .floating-middle-right {
     animation-name: floating5;
     animation-duration: 3s;
-    animation-iteration-count: 10;
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     margin-top: 5px; }
   .main-section .floating-bottom-right {
     animation-name: floating6;
+    animation-delay: 1.5s;
     animation-duration: 3s;
-    animation-iteration-count: 10;
+    animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     margin-top: 5px; }
 
@@ -377,6 +432,7 @@ header {
     .tools-section .tiles-block .tile {
       padding: 0 12px; }
       .tools-section .tiles-block .tile .tile-body {
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -387,10 +443,29 @@ header {
         width: 310px;
         min-height: 360px;
         color: #FFFFFF; }
+        .tools-section .tiles-block .tile .tile-body.blue {
+          background-color: #0A5DFF; }
+        .tools-section .tiles-block .tile .tile-body.green {
+          background-color: #20C933; }
+        .tools-section .tiles-block .tile .tile-body.orange {
+          background-color: #ffa800; }
+        .tools-section .tiles-block .tile .tile-body.red {
+          background-color: #FF6E6E; }
+        .tools-section .tiles-block .tile .tile-body.purple {
+          background-color: #624ce0; }
+        .tools-section .tiles-block .tile .tile-body.blue {
+          background-color: #0a5dff; }
+        .tools-section .tiles-block .tile .tile-body.dark-green {
+          background-color: #20c933; }
         .tools-section .tiles-block .tile .tile-body .top-block {
           margin-bottom: 30px; }
+          .tools-section .tiles-block .tile .tile-body .top-block .fixed-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 125px; }
           .tools-section .tiles-block .tile .tile-body .top-block img {
-            width: 62px; }
+            width: 75px; }
         .tools-section .tiles-block .tile .tile-body .bottom-block {
           display: flex;
           flex-direction: column;
@@ -432,7 +507,9 @@ header {
     justify-content: flex-end;
     align-items: flex-end; }
     .blue-banner-section .banner-img-snippet img {
-      margin-bottom: -2px; }
+      margin-bottom: -2px;
+      max-width: 730px;
+      width: 100%; }
 
 .taxes {
   position: relative;
@@ -448,14 +525,14 @@ header {
   .taxes .left-side {
     position: absolute;
     top: 50%;
-    left: -3%;
+    left: -3vw;
     max-width: 370px;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%); }
   .taxes .right-side {
     position: absolute;
     top: 50%;
-    right: -3%;
+    right: -3vw;
     max-width: 410px;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%); }
@@ -480,7 +557,11 @@ header {
   .technologies .techno-tile {
     border-radius: 12px;
     color: #FFFFFF;
-    overflow: hidden; }
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; }
     .technologies .techno-tile.green {
       background-color: #20C933; }
     .technologies .techno-tile.blue {
@@ -496,6 +577,8 @@ header {
       .technologies .techno-tile .bottom-block img {
         display: block;
         width: 100%; }
+      .technologies .techno-tile .bottom-block.narrow-img {
+        padding-right: 30px; }
     .technologies .techno-tile-title {
       text-align: center;
       font-size: 60px;
@@ -560,32 +643,28 @@ header {
   .plans .main-title {
     max-width: 700px;
     color: #FFFFFF;
-    margin-bottom: 85px; }
+    margin-bottom: 130px; }
+  .plans .img-snippet {
+    position: relative; }
+    .plans .img-snippet::before {
+      content: "";
+      position: absolute;
+      top: -153px;
+      left: 65px;
+      background-image: url("../img/girl-img.png");
+      width: 160px;
+      height: 200px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      z-index: 1; }
   .plans .tile-inside-block {
-    -webkit-transform: rotate(-4deg);
-    transform: rotate(-4deg);
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
     border-radius: 12px;
-    overflow: hidden; }
-  .plans .tile-plans {
-    border-radius: 12px;
-    background: linear-gradient(166.17deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.01) 99.53%);
-    -webkit-transform: rotate(4deg);
-    transform: rotate(4deg);
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+    overflow: hidden;
     margin: 0 30px; }
-    .plans .tile-plans:hover {
-      -webkit-transition: all 0.2s ease-in-out;
-      transition: all 0.2s ease-in-out;
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg); }
-      .plans .tile-plans:hover .tile-inside-block {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-        -webkit-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out; }
+  .plans .tile-plans {
+    position: relative;
+    z-index: 15;
+    border-radius: 12px; }
     .plans .tile-plans.white .tile-inside-block {
       background-color: #FFFFFF; }
     .plans .tile-plans.white .head-block {
@@ -664,6 +743,7 @@ header {
     display: flex;
     flex-direction: column;
     width: 100%;
+    max-width: 960px;
     height: auto;
     background-color: #f7f7f7;
     border-radius: 14px; }
@@ -693,6 +773,8 @@ header {
             color: #000000;
             letter-spacing: -.5px;
             margin-bottom: 20px; }
+            .faq .accordion .a-container .a-panel .content .description:last-of-type {
+              margin-bottom: 0; }
       .faq .accordion .a-container.active .a-btn {
         padding: 40px 56px 30px 56px; }
       .faq .accordion .a-container.active .a-panel {
@@ -708,19 +790,25 @@ header {
       width: 100%;
       color: #414141;
       font-size: 22px;
-      display: block;
+      display: flex;
+      flex-direction: row;
       font-weight: 500;
       cursor: pointer;
       transition: all 0.4s ease;
       border-radius: 5px; }
-    .faq .accordion span {
+      .faq .accordion .a-btn .indent {
+        padding-left: 40px; }
+    .faq .accordion span.text {
+      padding-right: 40px;
+      display: inline-block; }
+    .faq .accordion span.icon {
       display: block;
       position: absolute;
       height: 12px;
       width: 12px;
       right: 56px;
       top: 45px; }
-      .faq .accordion span:after {
+      .faq .accordion span.icon:after {
         content: '';
         width: 12px;
         height: 2px;
@@ -728,7 +816,7 @@ header {
         background-color: #000000;
         position: absolute;
         top: 6px; }
-      .faq .accordion span:before {
+      .faq .accordion span.icon:before {
         content: '';
         width: 12px;
         height: 2px;
@@ -738,6 +826,16 @@ header {
         top: 6px;
         transform: rotate(90deg);
         transition: all 0.3s ease-in-out; }
+
+.bubbles-snippet {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .bubbles-snippet img {
+    max-width: 430px;
+    width: 100%;
+    display: block; }
 
 footer {
   background-color: #f7f7f7;
@@ -833,7 +931,38 @@ footer {
   .for-wide-screen {
     display: none; } }
 
+@media only screen and (max-width: 1400px) {
+  .main-section .main-img .wrapper-payload-card {
+    right: 0;
+    top: 12%; }
+    .main-section .main-img .wrapper-payload-card .payload-card {
+      max-width: 25vw; }
+  .main-section .main-img .winden-card {
+    max-width: 31vw; }
+  .main-section .main-img .left-to-goal {
+    max-width: 34vw; }
+  .blue-banner-section .main-title {
+    font-size: 86px; }
+  .blue-banner-section .banner-img-snippet img {
+    max-width: 620px; }
+  .taxes .right-side {
+    right: -7vw; } }
+
+@media only screen and (max-width: 1300px) {
+  .taxes .left-side {
+    left: -10vw; }
+  .taxes .right-side {
+    right: -14vw; }
+  .technologies .techno-tile .top-block {
+    padding: 50px 40px 0; }
+  .plans .tile-inside-block {
+    margin: 0 15px; }
+  .bubbles-snippet img {
+    max-width: 340px; } }
+
 @media only screen and (max-width: 1200px) {
+  .blue-banner-section .main-title {
+    font-size: 80px; }
   .main-title {
     font-size: 80px;
     line-height: 90px; }
@@ -868,10 +997,94 @@ footer {
       right: 4%;
       width: 100px; }
     .main-section .main-description {
-      max-width: 480px; } }
+      max-width: 480px; }
+    .main-section .clock-icon {
+      width: 140px; }
+  .blue-banner-section {
+    padding-bottom: 0; }
+    .blue-banner-section .row {
+      justify-content: center !important; }
+    .blue-banner-section .col-12 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    .blue-banner-section .main-title {
+      max-width: 840px;
+      text-align: center; }
+    .blue-banner-section .main-description {
+      text-align: center;
+      max-width: 760px; }
+    .blue-banner-section .banner-img-snippet {
+      padding-top: 60px;
+      position: relative;
+      justify-content: center;
+      width: 100%; }
+  .taxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px; }
+    .taxes .main-description {
+      max-width: 650px; }
+    .taxes .main-description {
+      margin-bottom: 50px; }
+    .taxes .right-side,
+    .taxes .left-side {
+      display: inline-flex;
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      -webkit-transform: translateY(0);
+      transform: translateY(0); }
+    .taxes .bottom-side {
+      padding-top: 60px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start; }
+  .technologies .techno-tile-title {
+    font-size: 55px;
+    line-height: 67px; }
+  .technologies .techno-tile-description {
+    font-size: 20px;
+    line-height: 32px; }
+  .technologies .techno-tile .bottom-block {
+    min-height: 360px; }
+  .cards .main-description {
+    max-width: 630px; } }
+
+@media only screen and (max-width: 1100px) {
+  .tools-section {
+    padding-top: 590px; }
+  .technologies .techno-tile-title {
+    font-size: 48px;
+    line-height: 60px; }
+  .technologies .techno-tile .bottom-block {
+    min-height: 320px; }
+  .plans .tile-inside-block {
+    margin: 0; }
+  .plans .tile-plans .head-block {
+    padding: 30px 35px 30px; }
+  .plans .tile-plans .tile-list {
+    padding: 30px 35px 50px; }
+  .faq .accordion .a-container.active .a-btn {
+    padding: 35px 40px 25px 40px; }
+  .faq .accordion .a-container .a-panel {
+    padding: 0 40px; }
+  .faq .accordion .a-container .line-block {
+    padding: 0 40px; }
+  .faq .accordion .a-btn {
+    padding: 35px 40px; }
+  .faq .accordion span.icon {
+    top: 41px;
+    right: 35px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
+  .blue-banner-section .main-title {
+    font-size: 70px; }
   .main-title {
     font-size: 70px;
     line-height: 80px; }
@@ -903,15 +1116,121 @@ footer {
     right: 4%;
     width: 90px; }
   .main-section .main-description {
-    max-width: 480px; } }
+    max-width: 480px; }
+  .main-section .clock-icon {
+    width: 98px;
+    bottom: 13%; }
+  .main-section .main-img .wrapper-payload-card .payload-card {
+    max-width: 21vw; }
+  .main-section .main-img .wrapper-winder-card {
+    bottom: 7vw; }
+  .main-section .main-img .winden-card {
+    max-width: 24vw; }
+  .main-section .main-img .wrapper-left-to-goal {
+    left: -3vw; }
+  .main-section .main-img .left-to-goal {
+    max-width: 28vw; }
+  .tools-section {
+    padding-top: 360px; }
+    .tools-section .tiles-block {
+      padding-left: 60px; }
+      .tools-section .tiles-block .tile .tile-body {
+        padding: 29px 35px 40px;
+        min-height: 330px; }
+        .tools-section .tiles-block .tile .tile-body .tile-title {
+          font-size: 30px;
+          line-height: 37px; }
+        .tools-section .tiles-block .tile .tile-body .top-block img {
+          width: 65px; }
+        .tools-section .tiles-block .tile .tile-body .top-block .fixed-img {
+          left: 3px;
+          width: 95px; }
+  .taxes {
+    padding-top: 100px;
+    padding-bottom: 60px; }
+    .taxes .main-title {
+      max-width: 500px; }
+    .taxes .bottom-side {
+      align-items: flex-start; }
+  .technologies {
+    padding-top: 0;
+    padding-bottom: 100px; }
+    .technologies .techno-tile {
+      height: initial;
+      margin-bottom: 40px; }
+  .cards {
+    padding-top: 100px; }
+    .cards .main-title {
+      max-width: 570px; }
+  .plans .tile-plans {
+    margin-bottom: 40px; }
+  .plans .img-snippet::before {
+    width: 120px;
+    height: 120px;
+    top: -115px; }
+  .faq {
+    padding-top: 100px;
+    padding-bottom: 100px; }
+    .faq .main-title {
+      margin-bottom: 60px; }
+  .faq .accordion .a-btn {
+    font-size: 20px; }
+  .bubbles-snippet img {
+    max-width: 280px; }
+  footer .input-wrapper {
+    flex-direction: column;
+    align-items: flex-end; }
+    footer .input-wrapper .standard-form-input {
+      margin-right: 0;
+      padding: 12px 24px;
+      margin-bottom: 15px;
+      max-width: 240px; }
+    footer .input-wrapper .button {
+      max-width: 240px;
+      width: 100%; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
+  .input-wrapper {
+    padding: 8px 8px 9px 15px;
+    max-width: 420px; }
+  .blue-banner-section .main-title {
+    font-size: 50px; }
+  .main-title {
+    font-size: 50px;
+    line-height: 60px; }
+  .main-description {
+    font-size: 18px;
+    line-height: 28px; }
   header .right-side {
     display: none; }
   .main-section {
-    padding-top: 80px;
+    padding-top: 50px;
     padding-bottom: 200px; }
+    .main-section .hanging-coin.top-left {
+      top: 3%;
+      left: 10%;
+      width: 30px; }
+    .main-section .hanging-coin.middle-left {
+      top: 22%;
+      left: 10%;
+      width: 70px; }
+    .main-section .hanging-coin.bottom-left {
+      top: 40%;
+      left: 3%;
+      width: 70px; }
+    .main-section .hanging-coin.top-right {
+      top: 10%;
+      right: 8%;
+      width: 50px; }
+    .main-section .hanging-coin.middle-right {
+      top: 25%;
+      right: 10%;
+      width: 50px; }
+    .main-section .hanging-coin.bottom-right {
+      top: 50%;
+      right: 2%;
+      width: 80px; }
   .nav-mobile-wrapper {
     padding-top: 80px;
     background-color: #000000; }
@@ -940,11 +1259,322 @@ footer {
             color: rgba(255, 255, 255, 0.8); }
   .button {
     font-size: 15px;
-    display: inline-flex; } }
+    padding: 11px 22px;
+    line-height: 21px;
+    display: inline-flex; }
+  .main-section .main-title {
+    max-width: 400px; }
+  .main-section .main-description {
+    max-width: 420px; }
+  .main-section .main-img {
+    top: 115%; }
+  .main-section .clock-icon {
+    width: 60px;
+    bottom: 17%; }
+  .tools-section {
+    padding-top: 250px; }
+    .tools-section .main-title {
+      margin-bottom: 25px; }
+    .tools-section .main-description {
+      margin-bottom: 60px; }
+    .tools-section .tiles-block {
+      padding-left: 10px; }
+      .tools-section .tiles-block .tile .tile-body {
+        padding: 29px 30px 35px;
+        min-height: 310px;
+        width: 280px; }
+        .tools-section .tiles-block .tile .tile-body .top-block img {
+          width: 55px; }
+  .taxes .main-title {
+    max-width: 380px; }
+  .taxes .main-description {
+    margin-bottom: 40px; }
+  .taxes .bottom-side {
+    align-items: center; }
+  .cards .main-title {
+    max-width: 380px; }
+  .cards .main-description {
+    max-width: 370px; }
+  .plans {
+    padding-top: 100px; }
+    .plans .tile-plans .head-block .tile-title {
+      font-size: 36px; }
+    .plans .tile-plans .tile-list li {
+      font-size: 18px;
+      line-height: 23px;
+      padding-left: 30px; }
+  footer .footer-content {
+    flex-direction: column;
+    align-items: center; }
+  footer .left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  footer .right-side {
+    margin-top: 40px; }
+  footer .link-block {
+    margin-top: 40px; }
+  .copyright-wrapper .copyright {
+    text-align: center; }
+  @keyframes floating1 {
+    from {
+      transform: translate(0, 0px); }
+    65% {
+      transform: translate(0, 5px); }
+    to {
+      transform: translate(0, 0px); } }
+  @keyframes floating2 {
+    from {
+      transform: translate(0, 0px); }
+    65% {
+      transform: translate(0, -10px); }
+    to {
+      transform: translate(0, 0px); } }
+  @keyframes floating3 {
+    from {
+      transform: translate(0, 0px); }
+    50% {
+      transform: translate(0, 25px); }
+    to {
+      transform: translate(0, 0px); } }
+  @keyframes floating4 {
+    from {
+      transform: translate(0, 0px); }
+    60% {
+      transform: translate(0, -15px); }
+    to {
+      transform: translate(0, 0px); } }
+  @keyframes floating5 {
+    from {
+      transform: translate(0, 0px); }
+    40% {
+      transform: translate(0, 15px); }
+    to {
+      transform: translate(0, 0px); } }
+  @keyframes floating6 {
+    from {
+      transform: translate(0, 0px); }
+    45% {
+      transform: translate(0, -15px); }
+    to {
+      transform: translate(0, 0px); } } }
 
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 575px) {
+  .blue-banner-section .main-title {
+    font-size: 42px; }
+  .main-title {
+    font-size: 42px;
+    line-height: 52px;
+    letter-spacing: -1px; }
+  .main-section {
+    position: relative; }
+    .main-section::after {
+      content: '';
+      top: 0;
+      position: absolute;
+      z-index: 5;
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      height: 100%; }
+    .main-section .container {
+      position: relative;
+      z-index: 20; }
+    .main-section .main-title {
+      max-width: 360px; }
+    .main-section .main-img.desktop {
+      display: none; }
+    .main-section .main-img.mobile {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+    .main-section .clock-icon {
+      display: none; }
+    .main-section .input-wrapper {
+      flex-direction: column;
+      background-color: transparent;
+      padding: 0;
+      max-width: 375px; }
+      .main-section .input-wrapper .standard-form-input {
+        background-color: #262626; }
+  .tools-section {
+    padding-top: 45vw; }
+  .blue-banner-section {
+    padding-top: 90px; }
+    .blue-banner-section .banner-img-snippet {
+      padding-top: 40px; }
+  .taxes {
+    padding-top: 80px; }
+    .taxes .bottom-side {
+      display: none; }
+    .taxes .input-wrapper {
+      border: none; }
+      .taxes .input-wrapper .standard-form-input {
+        font-size: 18px;
+        border-radius: 6px;
+        border: 1px solid #EBEBEB; }
+        .taxes .input-wrapper .standard-form-input::-webkit-input-placeholder {
+          font-size: 18px; }
+        .taxes .input-wrapper .standard-form-input:-moz-placeholder {
+          font-size: 18px; }
+        .taxes .input-wrapper .standard-form-input::-moz-placeholder {
+          font-size: 18px; }
+        .taxes .input-wrapper .standard-form-input:-ms-input-placeholder {
+          font-size: 18px; }
+        .taxes .input-wrapper .standard-form-input::placeholder {
+          font-size: 18px; }
+  .technologies {
+    padding-bottom: 80px; }
+    .technologies .techno-tile-title {
+      font-size: 42px;
+      line-height: 52px;
+      letter-spacing: -2px; }
+    .technologies .techno-tile-description {
+      font-size: 18px;
+      line-height: 28px; }
+    .technologies .techno-tile .top-block {
+      padding: 40px 30px 0; }
+    .technologies .techno-tile .bottom-block {
+      margin-top: 15px;
+      min-height: initial; }
+  .cards {
+    padding-top: 90px;
+    padding-bottom: 80px; }
+    .cards .parallax-horizontal-block,
+    .cards .parallax-horizontal-block-upper {
+      display: none; }
+  .plans {
+    padding-top: 80px;
+    padding-bottom: 80px; }
+    .plans .img-snippet::before {
+      width: 100px;
+      height: 100px;
+      top: -96px; }
+    .plans .main-title {
+      margin-bottom: 120px; }
+  .button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px; }
+    .button.blue {
+      border: 1px solid #0a5dff; }
+  .input-wrapper {
+    flex-direction: column;
+    background-color: transparent;
+    padding: 0;
+    max-width: 375px; }
+  .input-wrapper .standard-form-input {
+    padding: 16px 24px;
+    border-radius: 4px;
+    font-size: 18px;
+    height: 50px; }
+    .input-wrapper .standard-form-input::-webkit-input-placeholder {
+      font-size: 18px; }
+    .input-wrapper .standard-form-input:-moz-placeholder {
+      font-size: 18px; }
+    .input-wrapper .standard-form-input::-moz-placeholder {
+      font-size: 18px; }
+    .input-wrapper .standard-form-input:-ms-input-placeholder {
+      font-size: 18px; }
+    .input-wrapper .standard-form-input::placeholder {
+      font-size: 18px; }
+  .input-wrapper .button {
+    height: 50px;
+    margin-top: 15px; }
+  .faq .accordion .a-container.active .a-btn {
+    padding: 30px 30px 20px 30px; }
+  .faq .accordion .a-container .a-panel {
+    padding: 0 30px; }
+  .faq .accordion .a-container .line-block {
+    padding: 0 30px; }
+  .faq .accordion .a-btn {
+    padding: 30px 30px; }
+  .faq .accordion span.icon {
+    top: 36px;
+    right: 30px; }
+  .bubbles-snippet img {
+    max-width: 240px; }
+  footer .input-wrapper {
+    max-width: 480px; }
+    footer .input-wrapper .standard-form-input {
+      max-width: 100%;
+      font-size: 16px;
+      height: 48px;
+      margin-bottom: 20px; }
+      footer .input-wrapper .standard-form-input::-webkit-input-placeholder {
+        font-size: 16px; }
+      footer .input-wrapper .standard-form-input:-moz-placeholder {
+        font-size: 16px; }
+      footer .input-wrapper .standard-form-input::-moz-placeholder {
+        font-size: 16px; }
+      footer .input-wrapper .standard-form-input:-ms-input-placeholder {
+        font-size: 16px; }
+      footer .input-wrapper .standard-form-input::placeholder {
+        font-size: 16px; }
+    footer .input-wrapper .button {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      max-width: 100%;
+      padding: 0;
+      height: 48px;
+      margin-top: 0; }
+  footer .right-side {
+    align-items: center;
+    max-width: 380px;
+    width: 100%; }
+  footer .link-block {
+    display: flex;
+    flex-direction: column; }
+  footer .links {
+    margin-bottom: 20px; } }
+
 @media only screen and (max-width: 480px) {
-  /**/ }
+  .main-section {
+    padding-bottom: 180px; }
+    .main-section .main-img {
+      top: 110%; }
+  .tools-section {
+    padding-top: 40vw; }
+  .technologies .techno-tile-title {
+    font-size: 34px;
+    line-height: 44px;
+    letter-spacing: -2px; }
+  .technologies .techno-tile .top-block {
+    padding: 35px 20px 0; }
+  .plans .tile-plans .head-block {
+    padding: 25px 25px 25px; }
+    .plans .tile-plans .head-block .tile-title {
+      font-size: 32px; }
+  .plans .tile-plans .tile-list {
+    padding: 30px 25px 40px; }
+    .plans .tile-plans .tile-list li {
+      margin-bottom: 30px; }
+      .plans .tile-plans .tile-list li.checked::before {
+        width: 16px;
+        height: 12px; }
+      .plans .tile-plans .tile-list li.unchecked::before {
+        width: 14px;
+        height: 14px; }
+  .faq {
+    padding-top: 80px;
+    padding-bottom: 80px; }
+    .faq .main-title {
+      margin-bottom: 40px; }
+    .faq .accordion .a-container.active .a-btn {
+      padding: 25px 20px 20px 20px; }
+    .faq .accordion .a-container .a-panel {
+      padding: 0 20px; }
+    .faq .accordion .a-container .line-block {
+      padding: 0 20px; }
+    .faq .accordion .a-btn {
+      padding: 25px 20px;
+      font-size: 18px; }
+    .faq .accordion span.icon {
+      top: 36px;
+      right: 30px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {

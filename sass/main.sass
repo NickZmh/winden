@@ -128,6 +128,9 @@ header
 			background-color: $light-gray-color
 .nav-mobile
 	display: none
+	.button
+		font-size: 15px
+		padding: 12px 24px
 .main-section
 	position: relative
 	background-color: #000000
@@ -135,6 +138,7 @@ header
 	padding-bottom: 315px
 	//min-height: 100vh
 	.main-title
+		width: 100%
 		max-width: 630px
 		margin-bottom: 24px
 	.main-description
@@ -158,11 +162,55 @@ header
 	.main-img
 		position: absolute
 		top: 120%
-		.left-to-goal
+		&.mobile
+			display: none
+		.wrapper-left-to-goal
 			position: absolute
+			display: flex
+			flex-direction: column
+			justify-content: flex-end
+			height: 70%
+			bottom: -7%
+			left: -45px
+		.left-to-goal
+			position: relative
 			left: 0
-			max-width: 400px
-			bottom: -5%
+			max-width: 420px
+			//height: 380px
+			//bottom: 150px
+			transition: transform 0.3s ease-out 0s
+			will-change: transform
+		.wrapper-winder-card
+			display: flex
+			flex-direction: column
+			justify-content: flex-end
+			position: absolute
+			right: 0
+			height: 70%
+			bottom: 7%
+		.winden-card
+			position: relative
+			right: 0
+			max-width: 425px
+
+		.wrapper-payload-card
+			display: flex
+			flex-direction: column
+			justify-content: flex-start
+			position: absolute
+			right: -25px
+			height: 50%
+			top: 105px
+			.payload-card
+				position: relative
+				right: 0
+				max-width: 400px
+				bottom: 0
+	.clock-icon
+		position: absolute
+		width: 180px
+		bottom: 10%
+		left: 20%
 	.hanging-coin
 		position: absolute
 		&.top-left
@@ -178,53 +226,59 @@ header
 			left: 12%
 			width: 103px
 		&.top-right
-			top: 18%
+			top: 22%
 			right: 20%
-			width: 65px
+			width: 70px
 		&.middle-right
-			top: 40%
+			top: 38%
 			right: 22%
 			width: 70px
 		&.bottom-right
-			top: 50%
-			right: 12%
+			top: 52%
+			right: 10%
 			width: 100px
+
 
 	.floating-top-left
 		animation-name: floating1
 		animation-duration: 3s
-		animation-iteration-count: 10
+		animation-delay: 1.5s
+		animation-iteration-count: infinite
 		animation-timing-function: ease-in-out
 		margin-top: 5px
 	.floating-middle-left
 		animation-name: floating2
 		animation-duration: 3s
-		animation-iteration-count: 10
+		animation-delay: 1.5s
+		animation-iteration-count: infinite
 		animation-timing-function: ease-in-out
 		margin-top: 5px
 	.floating-bottom-left
 		animation-name: floating3
 		animation-duration: 3s
-		animation-iteration-count: 10
+		animation-delay: 1.5s
+		animation-iteration-count: infinite
 		animation-timing-function: ease-in-out
 		margin-top: 5px
-
 	.floating-top-right
 		animation-name: floating4
 		animation-duration: 3s
-		animation-iteration-count: 10
+		animation-delay: 1.5s
+		animation-iteration-count: infinite
 		animation-timing-function: ease-in-out
 		margin-top: 5px
 	.floating-middle-right
 		animation-name: floating5
 		animation-duration: 3s
-		animation-iteration-count: 10
+		animation-delay: 1.5s
+		animation-iteration-count: infinite
 		animation-timing-function: ease-in-out
 		margin-top: 5px
 	.floating-bottom-right
 		animation-name: floating6
+		animation-delay: 1.5s
 		animation-duration: 3s
-		animation-iteration-count: 10
+		animation-iteration-count: infinite
 		animation-timing-function: ease-in-out
 		margin-top: 5px
 
@@ -296,6 +350,7 @@ header
 		.tile
 			padding: 0 12px
 			.tile-body
+				position: relative
 				display: flex
 				flex-direction: column
 				justify-content: space-between
@@ -306,10 +361,30 @@ header
 				width: 310px
 				min-height: 360px
 				color: $white-color
+				&.blue
+					background-color: #0A5DFF
+				&.green
+					background-color: #20C933
+				&.orange
+					background-color: rgba(255, 168, 0, 1)
+				&.red
+					background-color: #FF6E6E
+				&.purple
+					background-color: rgba(98, 76, 224, 1)
+				&.blue
+					background-color: rgba(10, 93, 255, 1)
+				&.dark-green
+					background-color: rgba(32, 201, 51, 1)
+
 				.top-block
 					margin-bottom: 30px
+					.fixed-img
+						position: absolute
+						top: 0
+						left: 0
+						width: 125px
 					img
-						width: 62px
+						width: 75px
 				.bottom-block
 					display: flex
 					flex-direction: column
@@ -352,6 +427,9 @@ header
 		align-items: flex-end
 		img
 			margin-bottom: -2px
+			max-width: 730px
+			width: 100%
+
 
 .taxes
 	position: relative
@@ -367,14 +445,14 @@ header
 	.left-side
 		position: absolute
 		top: 50%
-		left: -3%
+		left: -3vw
 		max-width: 370px
 		-webkit-transform: translateY(-50%)
 		transform: translateY(-50%)
 	.right-side
 		position: absolute
 		top: 50%
-		right: -3%
+		right: -3vw
 		max-width: 410px
 		-webkit-transform: translateY(-50%)
 		transform: translateY(-50%)
@@ -400,6 +478,10 @@ header
 		border-radius: 12px
 		color: $white-color
 		overflow: hidden
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		height: 100%
 		&.green
 			background-color: #20C933
 		&.blue
@@ -415,6 +497,8 @@ header
 			img
 				display: block
 				width: 100%
+			&.narrow-img
+				padding-right: 30px
 		&-title
 			text-align: center
 			font-size: 60px
@@ -478,32 +562,50 @@ header
 	.main-title
 		max-width: 700px
 		color: $white-color
-		margin-bottom: 85px
+		margin-bottom: 130px
+	.img-snippet
+		position: relative
+		&::before
+			content: ""
+			position: absolute
+			top: -153px
+			left: 65px
+			background-image: url("../img/girl-img.png")
+			width: 160px
+			height: 200px
+			background-size: contain
+			background-repeat: no-repeat
+			z-index: 1
 	.tile-inside-block
-		-webkit-transform: rotate(-4deg)
-		transform: rotate(-4deg)
-		-webkit-transition: all 0.2s ease-in-out
-		transition: all 0.2s ease-in-out
+		//-webkit-transform: rotate(-4deg)
+		//transform: rotate(-4deg)
+		//-webkit-transition: all 0.2s ease-in-out
+		//transition: all 0.2s ease-in-out
 		border-radius: 12px
 		overflow: hidden
-	.tile-plans
-		border-radius: 12px
-		background: linear-gradient(166.17deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .01) 99.53%)
-		-webkit-transform: rotate(4deg)
-		transform: rotate(4deg)
-		-webkit-transition: all 0.2s ease-in-out
-		transition: all 0.2s ease-in-out
 		margin: 0 30px
-		&:hover
-			-webkit-transition: all 0.2s ease-in-out
-			transition: all 0.2s ease-in-out
-			-webkit-transform: rotate(0deg)
-			transform: rotate(0deg)
-			.tile-inside-block
-				-webkit-transform: rotate(0deg)
-				transform: rotate(0deg)
-				-webkit-transition: all 0.2s ease-in-out
-				transition: all 0.2s ease-in-out
+	.tile-plans
+		position: relative
+		z-index: 15
+		border-radius: 12px
+		//background: linear-gradient(166.17deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .01) 99.53%)
+		//-webkit-transform: rotate(4deg)
+		//transform: rotate(4deg)
+		//-webkit-transition: all 0.2s ease-in-out
+		//transition: all 0.2s ease-in-out
+
+		//&:hover
+		//	-webkit-transition: all 0.2s ease-in-out
+		//	transition: all 0.2s ease-in-out
+		//	-webkit-transform: rotate(0deg)
+		//	transform: rotate(0deg)
+		//	.tile-inside-block
+		//		-webkit-transform: rotate(0deg)
+		//		transform: rotate(0deg)
+		//		-webkit-transition: all 0.2s ease-in-out
+		//		transition: all 0.2s ease-in-out
+
+
 		&.white
 			.tile-inside-block
 				background-color: $white-color
@@ -589,6 +691,7 @@ header
 		display: flex
 		flex-direction: column
 		width: 100%
+		max-width: 960px
 		height: auto
 		background-color: $light-gray-color
 		border-radius: 14px
@@ -619,6 +722,8 @@ header
 						color: #000000
 						letter-spacing: -.5px
 						margin-bottom: 20px
+						&:last-of-type
+							margin-bottom: 0
 			&.active
 				.a-btn
 					padding: 40px 56px 30px 56px
@@ -637,12 +742,18 @@ header
 			width: 100%
 			color: #414141
 			font-size: 22px
-			display: block
+			display: flex
+			flex-direction: row
 			font-weight: 500
 			cursor: pointer
 			transition: all 0.4s ease
 			border-radius: 5px
-		span
+			.indent
+				padding-left: 40px
+		span.text
+			padding-right: 40px
+			display: inline-block
+		span.icon
 			display: block
 			position: absolute
 			height: 12px
@@ -667,6 +778,16 @@ header
 				top: 6px
 				transform: rotate(90deg)
 				transition: all 0.3s ease-in-out
+
+.bubbles-snippet
+	display: flex
+	flex-direction: row
+	justify-content: center
+	align-items: center
+	img
+		max-width: 430px
+		width: 100%
+		display: block
 
 footer
 	background-color: $light-gray-color

@@ -74,7 +74,7 @@
 							<li><a href="#" class="">Use cases</a></li>
 							<li><a href="#" class="">Company</a></li>
 						</ul>
-						<a href="#" class="button green hover-state wow fadeIn" data-wow-delay="0.1s">Get early access</a>
+						<a href="#" class="button green hover-state ">Get early access</a>
 					</div>
 				</div>
 			</div>
@@ -82,11 +82,12 @@
 	</div>
 	<section class="main-section black-bg">
 		<img src="img/top-left-coin.png" class="hanging-coin top-left floating-top-left" alt="">
-		<img src="img/top-left-coin.png" class="hanging-coin middle-left floating-middle-left" alt="">
+		<img src="img/middle-left-coin.png" class="hanging-coin middle-left floating-middle-left" alt="">
 		<img src="img/bottom-left-coin.png" class="hanging-coin bottom-left floating-bottom-left" alt="">
 		<img src="img/top-right-coin.png" class="hanging-coin top-right floating-top-right" alt="">
 		<img src="img/middle-right.png" class="hanging-coin middle-right floating-middle-right" alt="">
 		<img src="img/bottom-right.png" class="hanging-coin bottom-right floating-bottom-right" alt="">
+		<img src="img/clock-icon.png" class="clock-icon wow fadeIn" alt="" data-wow-delay="0.8s">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -100,9 +101,21 @@
 							<button class="button blue hover-state">Get early access</button>
 						</div>
 					</div>
-					<div class="main-img wow fadeIn" data-wow-delay="0.6s">
+					<div class="main-img desktop wow fadeIn" data-wow-delay="0.6s">
 						<img src="img/main-image-block.png" alt="">
-						<img src="img/left-to-goal-img.png" class="left-to-goal wow fadeInDown" alt="" >
+						<div class="wrapper-left-to-goal">
+							<img src="img/left-to-goal-img.png" class="left-to-goal wow fadeInDown" data-wow-delay="0.6s" alt="">
+<!--							data-sticky="from: 1vh, duration: 0" data-animation="transform: {-10vh: translate(0, 5%) rotate(0), 100vh: scale(1) translate(0, 5%)}"-->
+						</div>
+						<div class="wrapper-winder-card">
+							<img src="img/winden-card.png" class="winden-card wow fadeInDown" data-wow-delay=".9s" alt="">
+						</div>
+						<div class="wrapper-payload-card">
+							<img src="img/payloads-card.png" class="payload-card wow fadeInDown" data-wow-delay=".7s" data-wow-offset="300" alt="">
+						</div>
+					</div>
+					<div class="main-img mobile wow fadeIn" data-wow-delay="0.6s">
+						<img src="img/main-img-mobile.png" alt="">
 					</div>
 				</div>
 			</div>
@@ -123,9 +136,9 @@
 		</div>
 		<div class="tiles-block">
 			<div class="tile wow fadeIn" data-wow-delay="0.1s">
-				<div class="tile-body">
+				<div class="tile-body blue">
 					<div class="top-block">
-						<img src="img/blue-tile-img.png" alt="">
+						<img src="img/tile-img-1.png" alt="">
 					</div>
 					<div class="bottom-block">
 						<h5 class="tile-title">No Fees</h5>
@@ -134,9 +147,9 @@
 				</div>
 			</div>
 			<div class="tile wow fadeIn" data-wow-delay="0.2s">
-				<div class="tile-body">
+				<div class="tile-body green">
 					<div class="top-block">
-						<img src="img/green-tile-img.png" alt="">
+						<img src="img/tile-img-2.png" alt="">
 					</div>
 					<div class="bottom-block">
 						<h5 class="tile-title">Credit Builder</h5>
@@ -145,9 +158,9 @@
 				</div>
 			</div>
 			<div class="tile wow fadeIn" data-wow-delay="0.4s">
-				<div class="tile-body">
+				<div class="tile-body orange">
 					<div class="top-block">
-						<img src="img/orange-tile-img.png" alt="">
+						<img src="img/tile-img-3.png" alt="">
 					</div>
 					<div class="bottom-block">
 						<h5 class="tile-title">Instant Funds</h5>
@@ -156,35 +169,46 @@
 				</div>
 			</div>
 			<div class="tile wow fadeIn" data-wow-delay="0.6s">
-				<div class="tile-body">
+				<div class="tile-body red">
 					<div class="top-block">
-						<img src="img/red-tile-img.png" alt="">
+						<img src="img/tile-img-4.png" alt="">
 					</div>
 					<div class="bottom-block">
-						<h5 class="tile-title">Tax Automation</h5>
+						<h5 class="tile-title">Tax Magic</h5>
 						<p class="tile-description">Automatically set aside money money for taxes with a free interest bearing account.</p>
 					</div>
 				</div>
 			</div>
 			<div class="tile wow fadeIn" data-wow-delay="0.8s">
-				<div class="tile-body">
+				<div class="tile-body purple">
 					<div class="top-block">
-						<img src="img/violet-tile-img.png" alt="">
+						<img src="img/tile-img-5.png" alt="">
 					</div>
-					<div class="bottom-block justify-content-center">
+					<div class="bottom-block">
 						<h5 class="tile-title">Crypto</h5>
 						<p class="tile-description">Send, receive, and hold cryptocurrencies directly into your Winden account.</p>
 					</div>
 				</div>
 			</div>
 			<div class="tile wow fadeIn" data-wow-delay="0.10s">
-				<div class="tile-body">
+				<div class="tile-body blue">
 					<div class="top-block">
-						<img src="img/light-blue-tile-img.png" alt="">
+						<img src="img/tile-img-6.png" class="fixed-img" alt="">
 					</div>
 					<div class="bottom-block justify-content-center">
-						<h5 class="tile-title">Experienced Support</h5>
+						<h5 class="tile-title">24/7 Support</h5>
 						<p class="tile-description">Call or chat with an experienced team member 24/7 if you’re facing an issue or just have questions.</p>
+					</div>
+				</div>
+			</div>
+			<div class="tile wow fadeIn" data-wow-delay="0.10s">
+				<div class="tile-body dark-green">
+					<div class="top-block">
+						<img src="img/tile-img-7.png" alt="">
+					</div>
+					<div class="bottom-block justify-content-center">
+						<h5 class="tile-title">$750K FDIC</h5>
+						<p class="tile-description">Get instant access to funds paid through Winden invoices and payouts from Stripw or Amazon.</p>
 					</div>
 				</div>
 			</div>
@@ -192,22 +216,19 @@
 	</section>
 	<section class="blue-banner-section">
 		<div class="container">
-			<div class="row">
-				<div class="col-6">
+			<div class="row justify-content-xl-start">
+				<div class="col-12 col-xl-6">
 					<h3 class="main-title wow fadeIn">Full-featured digital banking with no fees.</h3>
 					<p class="main-description wow fadeIn" data-wow-delay="0.1s">Make domestic and international wire transfers, issue and deposit checks, access cash at ATM’s, and much more.</p>
 				</div>
 			</div>
 		</div>
 		<div class="banner-img-snippet wow fadeIn" data-wow-delay="0.5s">
-			<img src="img/blue-banner-img-1.png" alt="" class="for-narrow-screen">
-			<img src="img/blue-banner-img.png" alt="" class="for-wide-screen">
+<!--			<img src="img/blue-banner-img-1.png" alt="" class="for-narrow-screen">-->
+			<img src="img/blue-banner-img.png" alt="" class="">
 		</div>
 	</section>
 	<section class="taxes">
-		<div class="left-side wow fadeIn" data-wow-delay="0.3s">
-			<img src="img/taxes-img-1.png" alt="">
-		</div>
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-12">
@@ -223,14 +244,19 @@
 				</div>
 			</div>
 		</div>
-		<div class="right-side wow fadeIn" data-wow-delay="0.3s">
-			<img src="img/taxes-img-2.png" alt="">
+		<div class="bottom-side">
+			<div class="left-side wow fadeIn" data-wow-delay="0.3s">
+				<img src="img/taxes-img-1.png" alt="">
+			</div>
+			<div class="right-side wow fadeIn" data-wow-delay="0.3s">
+				<img src="img/taxes-img-2.png" alt="">
+			</div>
 		</div>
 	</section>
 	<section class="technologies">
 		<div class="container">
-			<div class="row">
-				<div class="col-6">
+			<div class="row justify-content-center">
+				<div class="col-md-8 col-lg-6">
 					<div class="techno-tile green wow fadeIn">
 						<div class="top-block">
 							<h4 class="techno-tile-title">Get instant access to your money. </h4>
@@ -241,13 +267,13 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-6">
+				<div class="col-md-8 col-lg-6">
 					<div class="techno-tile blue wow fadeIn" data-wow-delay="0.2s">
 						<div class="top-block">
 							<h4 class="techno-tile-title">Build or improve your credit score.</h4>
 							<p class="techno-tile-description">Access one time or revolving credit lines. Get a credit card with flexible limits based on your available Winden account balance.</p>
 						</div>
-						<div class="bottom-block">
+						<div class="bottom-block narrow-img">
 							<img src="img/techno-tile-image-2.png" alt="">
 						</div>
 					</div>
@@ -271,8 +297,8 @@
 		<div class="parallax-horizontal-block-upper wow fadeIn">
 			<div class="paroller-upper"
 					 data-paroller-factor="-0.4"
-					 data-paroller-factor-xs="0.2"
-					 data-paroller-factor-sm="0.3"
+					 data-paroller-factor-xs="-0.1"
+					 data-paroller-factor-sm="-0.1"
 					 data-paroller-type="foreground"
 			>
 				<img src="img/card-img-1.png" alt="">
@@ -294,8 +320,8 @@
 		</div>
 		<div class="parallax-horizontal-block wow fadeIn">
 			<div class="paroller" data-paroller-factor="0.4"
-					 data-paroller-factor-xs="0.2"
-					 data-paroller-factor-sm="0.3"
+					 data-paroller-factor-xs="0.1"
+					 data-paroller-factor-sm="0.1"
 					 data-paroller-type="foreground"
 			>
 				<img src="img/cards-bottom-img-1.png" alt="">
@@ -312,17 +338,17 @@
 	</section>
 	<section class="plans">
 		<div class="container">
-			<div class="row">
+			<div class="row justify-content-center">
 				<div class="col-12">
 					<div class="wrapper-content">
 						<h3 class="main-title wow fadeIn">Give yourself a competitive edge</h3>
 					</div>
 				</div>
-				<div class="col-6">
+				<div class="col-md-8 col-lg-6">
 					<div class="tile-plans white wow fadeIn" data-wow-delay="0.1s">
+						<div class="img-snippet wow fadeIn"></div>
 						<div class="tile-inside-block">
 							<div class="head-block">
-								<h6 class="small-title">With</h6>
 								<h4 class="tile-title"><img src="img/logo.png" alt="">Winden</h4>
 							</div>
 							<div class="content-block">
@@ -343,11 +369,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-6">
+				<div class="col-md-8 col-lg-6">
 					<div class="tile-plans black wow fadeIn" data-wow-delay="0.2s">
 						<div class="tile-inside-block">
 							<div class="head-block">
-								<h6 class="small-title">What you get with a</h6>
 								<h4 class="tile-title">Traditional bank</h4>
 							</div>
 							<div class="content-block">
@@ -374,13 +399,13 @@
 	<section class="faq">
 		<div class="container">
 			<div class="row">
-				<div class="col-12">
+				<div class="col-12 d-flex flex-column align-items-center">
 					<div class="wrapper-content">
 						<h4 class="main-title wow fadeIn">Frequently Asked Questions</h4>
 					</div>
 					<div class="accordion v1">
 						<div class="a-container wow fadeIn" data-wow-delay="0.1s">
-							<p class="a-btn"><span></span>How long does it take for funds to go from the account to the card? </p>
+							<p class="a-btn"><span class="icon"></span>How long does it take for funds to go from the account to the card? <span class="indent"></span></p>
 							<div class="a-panel">
 								<div class="content">
 									<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in porttitor ligula. Nunc lacinia, tellus eget consectetur interdum, tellus sapien gravida enim, ac pharetra nibh dui vel ex. Etiam eu faucibus arcu.</p>
@@ -392,7 +417,7 @@
 							<div class="line-block">
 								<div class="line"></div>
 							</div>
-							<p class="a-btn"><span></span>Do I have to subscribe to the app?</p>
+							<p class="a-btn"><span class="icon"></span>Do I have to subscribe to the app?<span class="indent"></span></p>
 							<div class="a-panel">
 								<div class="content">
 									<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in porttitor ligula. Nunc lacinia, tellus eget consectetur interdum, tellus sapien gravida enim, ac pharetra nibh dui vel ex. Etiam eu faucibus arcu.</p>
@@ -404,7 +429,7 @@
 							<div class="line-block">
 								<div class="line"></div>
 							</div>
-							<p class="a-btn"><span></span>How many cards can I get at the same time?</p>
+							<p class="a-btn"><span class="icon"></span>How many cards can I get at the same time?<span class="indent"></span></p>
 							<div class="a-panel">
 								<div class="content">
 									<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in porttitor ligula. Nunc lacinia, tellus eget consectetur interdum, tellus sapien gravida enim, ac pharetra nibh dui vel ex. Etiam eu faucibus arcu.</p>
@@ -417,6 +442,9 @@
 			</div>
 		</div>
 	</section>
+	<div class="bubbles-snippet wow fadeIn">
+		<img src="img/bubbles-img.png" alt="">
+	</div>
 	<footer>
 		<div class="container">
 			<div class="row">
@@ -472,6 +500,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 	<script src="libs/slick/slick.min.js"></script>
 	<script src="libs/paroller/jquery.paroller.min.js"></script>
+	<script src="libs/stickymate/stickymate.js"></script>
 
 
 	<script src="js/common.js"></script>

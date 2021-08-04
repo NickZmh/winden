@@ -84,7 +84,11 @@ button {
     font-weight: 400;
     border: none;
     background-color: transparent;
-    padding-right: 25px; }
+    padding-right: 25px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none; }
     .input-wrapper .standard-form-input:focus {
       border: none;
       outline: none;

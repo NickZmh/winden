@@ -59,15 +59,16 @@ $(function() {
 
 	$('.paroller').paroller({
 		direction: 'horizontal',
-		transition: 'transform 0.3s ease-out'
+		transition: 'transform 0.3s ease-out',
+		factorXs: 0.1,
 	});
 	$('.paroller-upper').paroller({
 		direction: 'horizontal',
-		transition: 'transform 0.3s ease-out'
+		transition: 'transform 0.3s ease-out',
+		factorXs: 0.1,
 	});
-	$('.left-to-goal').paroller({
-		transition: 'transform 0.3s ease-out'
-	});
+
+
 
 
 	function initAcc(elem, option){
