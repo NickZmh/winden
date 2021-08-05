@@ -344,13 +344,14 @@ header
 			cursor: pointer
 			width: 25%
 			padding: 0 12px
-			transition: all 0.3s ease-out
-			&:hover
-				transform: scale(1.033) translateZ(0)
-				transition: all 0.3s ease-out
-				.tile-body
-					transition: all 0.3s ease-out
-					box-shadow: 1px 1px 14px 8px rgba(37, 117, 252, .15)
+			perspective: 30px
+			//transition: all 0.3s ease-out
+			//&:hover
+			//	transform: scale(1.033) translateZ(0)
+			//	transition: all 0.3s ease-out
+			//	.tile-body
+			//		transition: all 0.3s ease-out
+			//		box-shadow: 1px 1px 14px 8px rgba(37, 117, 252, .15)
 			.tile-body
 				width: 100%
 				position: relative
@@ -363,7 +364,9 @@ header
 				box-shadow: 10px 20px 30px rgba(18, 19, 22, 0.03)
 				min-height: 360px
 				color: $white-color
-				transition: all 0.3s ease-out
+				//transition: all 0.3s ease-out
+				transition: transform 0.5s
+				-webkit-transition: transform 0.5s
 				&.blue
 					background-color: #0A5DFF
 				&.green
