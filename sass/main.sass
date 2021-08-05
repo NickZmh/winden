@@ -345,13 +345,13 @@ header
 			width: 25%
 			padding: 0 12px
 			perspective: 30px
-			//transition: all 0.3s ease-out
-			//&:hover
-			//	transform: scale(1.033) translateZ(0)
-			//	transition: all 0.3s ease-out
-			//	.tile-body
-			//		transition: all 0.3s ease-out
-			//		box-shadow: 1px 1px 14px 8px rgba(37, 117, 252, .15)
+			transition: all 0.3s ease-out
+			&:hover
+				transform: scale(1.033) translateZ(0)
+				transition: all 0.3s ease-out
+				.tile-body
+					transition: all 0.3s ease-out
+					box-shadow: 1px 1px 14px 8px rgba(37, 117, 252, .15)
 			.tile-body
 				width: 100%
 				position: relative
@@ -367,6 +367,7 @@ header
 				//transition: all 0.3s ease-out
 				transition: transform 0.5s
 				-webkit-transition: transform 0.5s
+
 				&.blue
 					background-color: #0A5DFF
 				&.green

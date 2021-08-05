@@ -426,7 +426,14 @@ header {
       cursor: pointer;
       width: 25%;
       padding: 0 12px;
-      perspective: 30px; }
+      perspective: 30px;
+      transition: all 0.3s ease-out; }
+      .tools-section .tiles-block .tile:hover {
+        transform: scale(1.033) translateZ(0);
+        transition: all 0.3s ease-out; }
+        .tools-section .tiles-block .tile:hover .tile-body {
+          transition: all 0.3s ease-out;
+          box-shadow: 1px 1px 14px 8px rgba(37, 117, 252, 0.15); }
       .tools-section .tiles-block .tile .tile-body {
         width: 100%;
         position: relative;
