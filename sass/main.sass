@@ -347,7 +347,7 @@ header
 			perspective: 30px
 			transition: all 0.3s ease-out
 			&:hover
-				transform: scale(1.033) translateZ(0)
+				transform: scale(1.035) translateZ(0)
 				transition: all 0.3s ease-out
 				.tile-body
 					transition: all 0.3s ease-out
@@ -367,6 +367,8 @@ header
 				//transition: all 0.3s ease-out
 				transition: transform 0.5s
 				-webkit-transition: transform 0.5s
+				transform-style: preserve-3d
+				will-change: transform
 
 				&.blue
 					background-color: #0A5DFF

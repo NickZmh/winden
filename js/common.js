@@ -127,8 +127,8 @@ function animationTile(parent, children) {
 				this.y = (e.clientY - this._y) * -1;
 			},
 			setOrigin: function(e) {
-				this._x = e.offsetLeft + Math.floor(e.offsetWidth / 2);
-				this._y = e.offsetTop + Math.floor(e.offsetHeight / 2);
+				this._x = e.offsetLeft + Math.floor(e.offsetWidth / 1.5);
+				this._y = e.offsetTop + Math.floor(e.offsetHeight / 1.5);
 			},
 			show: function() {
 				return "(" + this.x + ", " + this.y + ")";
